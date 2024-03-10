@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package tictactoe;
 
 import java.awt.BorderLayout;
@@ -15,10 +12,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-/**
- *
- * @author radhi
- */
+
 public class TicTacToe implements ActionListener{
     
     JFrame frame = new JFrame();
@@ -282,8 +276,7 @@ public class TicTacToe implements ActionListener{
             winEvaluation=0;
             loseEvaluation=0;
             int counter=0;
-            System.out.println(i);
-            if(isValid[i]){System.out.println("true");
+            if(isValid[i]){
                 for(int j=0; j<3; j++){
                     if(button[compinations[i][j]].getText()==computerChoice){
                         counter++;
@@ -307,7 +300,6 @@ public class TicTacToe implements ActionListener{
                         isValid[i]=false;
                         highestLoseEvaluation=0;
                         highestWinEvaluation=0;
-                        System.out.println(i + " not valid!!!!!!!");
                         i=-1;
                     }
                 }
@@ -327,7 +319,6 @@ public class TicTacToe implements ActionListener{
     void computerMove(int[] compination){
         for(int i=0; i<3; i++){
             if(button[i].isEnabled()){
-                System.out.println("computer is trying: " + compination[i]);
                 if(button[compination[i]].getText()==""){
                     button[compination[i]].setText(computerChoice);
                     button[compination[i]].setForeground(new Color(200,150,50));
