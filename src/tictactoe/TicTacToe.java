@@ -10,7 +10,6 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 
 
 public class TicTacToe implements ActionListener{
@@ -397,7 +396,6 @@ public class TicTacToe implements ActionListener{
     }
         
     public static void main(String[] args) {
-        // TODO code application logic here
         new TicTacToe();
     }
 
